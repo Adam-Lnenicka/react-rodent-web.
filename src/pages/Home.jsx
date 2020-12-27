@@ -37,29 +37,24 @@ function Home() {
   
         <div className="banner">
             <div>
-                <h1>Energy made simple</h1>
-                <h2>Join today for 24/7 support and savings upward of £300/yr*.</h2>
+                <h1>Rodent World</h1>
+                <h2>All you need to know about rodents.</h2>
 
-            </div>
-          </div>
+
           
-          <div className="why-us-short">
-            <p>Why switch to us?</p>
-            <h3>We offer intelligent tariffs, ground-breaking apps & low cost green energy.</h3>
-          </div>
-      <div className="updates-short">  
-        <p>What we are doing at Green</p>
-        <h3> Company updates & how we are improving your experience.</h3>
-      </div>
 
+      
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Search for your favourite animal!"
         value={searchTerm}
         onChange={(e)=>{
             setSearchTerm(e.target.value);
         }}
       />
+
+</div>
+          </div>
       <div className="card-section">
           {data}
   
