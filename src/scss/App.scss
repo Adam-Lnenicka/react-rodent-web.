@@ -1,0 +1,57 @@
+*{
+  font-family: 'Gotham';
+}
+$extra-light:  #fafafa;
+$light:  #d0d0d0;
+$medium-light:  #b2b2b2;
+$medium-dark:  	#949494;
+$dark:  #484647;
+$button: #289ddf;
+$theme-green: 	#33ac5d;
+$dark-green: 	#00310e;
+$span: green;
+
+h1{
+  font-size: 4.5rem;
+  margin-bottom:0.3em;
+  font-weight: 500;
+  color:$dark;
+  
+}
+
+h2{
+  font-size: 2rem;
+  margin-bottom:0.3em;
+  font-weight: bold;
+  color: $medium-light;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $dark;
+  font-weight: 500;
+  line-height: 1.25em;
+}
+
+h4{
+  font-size: 1rem;
+  margin:0.8em 0;
+  font-weight: bold;
+  color: $dark;
+  font-weight: 500;
+}
+
+p{
+  margin: 0.4em 0;
+  font-family: 'GothamBook';
+  color:$dark;
+
+}
+
+
+
+
+
+

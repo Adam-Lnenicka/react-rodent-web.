@@ -1,0 +1,46 @@
+$extra-light:  #f8f8f8;
+$button: #289ddf;
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 3.5em;
+    align-items: center;
+    img{
+        width:150px;
+    }
+    li, button{
+        background-color: grey;
+        border:none;
+        padding: 0.6em 1.2em;
+        border-radius: 0.2em;
+        color:white;
+        font-weight:500;
+        font-size:1rem;
+        letter-spacing:1px; 
+        display: inline-block;
+        
+    }
+
+}
+.navbar{
+    display:flex;
+  
+    a:target, a:focus {
+        display:flex;
+        background-color: red;
+        padding: 0.35em 0.4em; 
+        padding-right: 0.4em;
+        list-style: none;
+        border-radius: 0.3em;
+        margin-left: 0.5em;
+        text-decoration: none;  
+    }
+      .active:target, .active:focus{
+        background-color: red;   
+    }
+  }
+  

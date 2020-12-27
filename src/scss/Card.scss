@@ -1,0 +1,81 @@
+$extra-light:  #fafafa;
+$light:  #d0d0d0;
+$medium-light:  #b2b2b2;
+$medium-dark:  	#949494;
+$dark:  #484647;
+$button: #289ddf;
+$theme-green: 	#33ac5d;
+$dark-green: 	#00310e;
+$span: green;
+
+
+.card{
+    display:flex;
+    flex-direction:column;
+    margin: 0.3em 0;
+    width: 410px;
+    height:415px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 $light, 0 6px 20px 0 $light;
+    margin: 1.2em;
+    border-radius: 0.5em 0.5em 0 0;
+    h2{
+        color:$dark;
+        font-size:1.4rem;
+    }
+
+    p{
+      margin:0.6em 0em;
+      color: $medium-dark;
+      font-size: 1rem;  
+      font-family: 'GothamBook';
+    }
+    
+
+
+    img{
+      object-fit: cover;
+      overflow:hidden;
+      height:80%;
+      width: 100%;
+      border-radius: 0.5em 0.5em 0 0;
+      margin:0
+    }
+    .card-content{
+      padding:1.4em;
+      height:60%;
+    }
+    span{
+      color:$span;
+      font-family: 'Gotham';
+    }
+    
+    button{
+      background-color: $button;
+      border:none;
+      padding: 0.3em 0.8em;
+      border-radius: 0.3em;
+      color:white;
+      font-weight:500;
+      font-size:1.0rem;
+      letter-spacing:1px; 
+      margin-bottom:0.6em;
+    }
+    }
+  
+    .card-section{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin:0 auto;
+        max-width: 900px;
+        }
+      .date{
+      font-family: 'GothamBook';
+      color:$medium-light;
+      margin:0.4em 0;
+      margin-bottom:0.25em;
+      font-size: 1.1rem;
+
+    }
+      
