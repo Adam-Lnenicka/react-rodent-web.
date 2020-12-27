@@ -1,4 +1,4 @@
-import '../scss/Card.scss'
+import './Card.scss'
 import React from 'react'
 
 export default function Card (props){
