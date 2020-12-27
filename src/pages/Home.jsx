@@ -16,20 +16,23 @@ function Home() {
     
 
     const [searchTerm, setSearchTerm]= useState("");
+    const [visible, setVisible] =useState(6)
 
     const data=    DATA.filter((data)=>{
-        if (searchTerm ==""){
+        if (searchTerm ===""){
             return data
         }else if (data.date.toLowerCase().includes(searchTerm.toLowerCase())){
             return data
         }
-    }).map((data)=>{
+    }).slice(0, visible).map((data)=>{
         return(
             
                 <Card key={data.id} button={data.button} image={data.image} date={data.date} heading={data.heading} author={data.author}/>)
     })
     
-
+const displayMore =()=>{
+    setVisible (()=>visible+6)
+}
   return (
     <div className="App">
         <Header/>
@@ -57,8 +60,10 @@ function Home() {
           </div>
       <div className="card-section">
           {data}
+          
   
       </div>
+      <button onClick ={displayMore}>Show more</button>
       <Footer/>
 
 
