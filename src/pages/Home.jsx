@@ -9,31 +9,32 @@ import Footer from "../components/Footer.jsx";
 import DATA from '../MOCK_DATA.json';
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 
-
-
-
-
-
-
 export default function Home() {
   const [searchTerm, setSearchTerm]= useState("");
-  const [page, setPage] =useState(6)
+  const [page, setPage] =useState(4)
 
 
-  const data=    DATA.filter((data)=>{
+  const data = DATA.filter((data)=>{
       if (searchTerm ===""){
           return data
-      }else if (data.date.toLowerCase().includes(searchTerm.toLowerCase())){
+      }else if (data.name.toLowerCase().includes(searchTerm.toLowerCase())){
           return data
       }
   }).slice(0, page).map((data)=>{
       return(
-        <Card key={data.id} button={data.button} date={data.date} image={data.image} heading={data.heading} author={data.author}/>)
+        <Card   key={data.id} 
+                name={data.name} 
+                suborder={data.suborder} 
+                family={data.family} 
+                genus={data.genus} 
+                image={data.image} 
+                source={data.source} 
+                detail={data.detail}/>)
               // <Cards key={data.id} button={data.button} image={data.image} date={data.date} heading={data.heading} author={data.author}/>)
   })
   
 const displayMore =()=>{
-  setPage (()=>page+6)
+  setPage (()=>page+4)
 }
 
 
@@ -48,7 +49,7 @@ const displayMore =()=>{
                 <h2>All you need to know about rodents.</h2>
                 <InputGroup>
                     <InputGroupAddon addonType="prepend">
-                    <InputGroupText>@</InputGroupText>
+                    <InputGroupText  style={{backgroundColor: "#cc7351", color: "white", border:"none"}}><i class="fas fa-search"></i></InputGroupText>
                     </InputGroupAddon>
                     <Input                     
                         type="text"

@@ -3,89 +3,83 @@ $light:  #d0d0d0;
 $medium-light:  #b2b2b2;
 $medium-dark:  	#949494;
 $dark:  #484647;
-$button: #289ddf;
-$theme-green: 	#33ac5d;
-$dark-green: 	#00310e;
-$span: green;
+
 
 
 .card{
     display: flex;
     flex-direction: column;
     margin: 0.3em 0;
-    width: 610px;
+    width: 500px;
     height:415px;
     background-color: white;
     box-shadow: 0 4px 8px 0 #d0d0d0, 0 6px 20px 0 #d0d0d0;
     margin: 1.2em;
     margin-bottom:0;
     border-radius: 0.5em 0.5em 0 0;
+    line-height: 0.95em;
     h2{
         color:$dark;
         font-size:1.4rem;
     }
 
-    p{
+    p, i{
       margin:0.6em 0em;
       color: $medium-dark;
       font-size: 1rem;  
-      font-family: 'GothamBook';
-    }
-    
-
-
-    img{
-      object-fit: cover;
-      overflow:hidden;
-      height:80%;
-      width: 100%;
-      border-radius: 0.5em 0.5em 0 0;
-      margin:0
-    }
-    .card-content{
-      padding:1.4em;
-      height:60%;
-    }
-    span{
-      color:$span;
-      font-family: 'Gotham';
-    }
-    
-    button{
-      background-color: $button;
-      border:none;
-      padding: 0.3em 0.8em;
-      border-radius: 0.3em;
-      color:white;
-      font-weight:500;
-      font-size:1.0rem;
-      letter-spacing:1px; 
-      margin-bottom:0.6em;
-    }
-    }
-  
-    .card-section{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content:center;
-        margin:0 auto;
-        max-width: 1300px;
-        }
-      .date{
-      font-family: 'GothamBook';
-      color:$medium-light;
-      margin:0.4em 0;
-      margin-bottom:0.25em;
-      font-size: 1.1rem;
-
-    }
+      a{
+        color: #e08f62;
+      }
       
+    }
+    
+
+
+img{
+  object-fit: cover;
+  overflow:hidden;
+  height:50%;
+  width: 100%;
+  border-radius: 0.5em 0.5em 0 0;
+  margin:0
+}
+.card-content{
+  padding:1.4em;
+  height:50%;
+}
 
     
-.overflow {
+button{
+  background-color: #cc7351;
+  border:none;
+  padding: 0.3em 0.8em;
+  border-radius: 0.3em;
+  color:white;
+  font-weight:500;
+  font-size:1.0rem;
+  letter-spacing:1px; 
+  margin-bottom:0.6em;
+}
+}
 
+.card-section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin:0 auto;
+    max-width: 1300px;
+    }
+  .date{
+  font-family: 'GothamBook';
+  color:$medium-light;
+  margin:0.4em 0;
+  margin-bottom:0.25em;
+  font-size: 1.1rem;
+
+}
+      
+.overflow {
   overflow: auto;
-  
 }
 
 
@@ -94,7 +88,7 @@ $span: green;
  padding:1em;
   background-color: #ebebeb;
   margin:0 auto;
-  width: 610px;
+  width: 500px;
   box-sizing: border-box;
   box-shadow: 0 4px 8px 0 #d0d0d0, 0 6px 20px 0 #d0d0d0;
 }

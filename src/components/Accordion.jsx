@@ -6,12 +6,12 @@ function Card(props) {
   const [setHeight, setHeightState] = useState("0px");
 
 
-  const button = useRef(null);
+  const detail = useRef(null);
 
   function toggleAccordion() {
     setActiveState(setActive === "" ? "active" : "");
     setHeightState(
-      setActive === "active" ? "0px" : `${button.current.scrollHeight}px`
+      setActive === "active" ? "0px" : `${detail.current.scrollHeight}px`
     );
 
   }
@@ -22,25 +22,25 @@ function Card(props) {
       <div className="card">
             <img src ={props.image}/>
             <div className="card-content">
-                <button>{props.button}</button>
-                <div className="date">{props.date}</div>
-                <button className={`accordion ${setActive}`} onClick={toggleAccordion}>ttt</button>
-                <h2>{props.heading}</h2>
-                <p> Written by <span>{props.author}</span></p>
-              
-                
+                <h2>{props.name}</h2>
+                <p>Suborder: {props.suborder}</p>
+                <p>Family: {props.family}</p>
+                <p>Genus: {props.genus}</p>
+                <button className={`accordion ${setActive}`} onClick={toggleAccordion}>Rodent details</button>                
+                <br/>
+                <i>Source: <a href={props.source}  target="_blank">{props.source}</a></i>
             </div>
         </div>
        
       
       <div
-        ref={button}
+        ref={detail}
         style={{ maxHeight: `${setHeight}` }}
         className="overflow"
       >
         <div
           className="hidden-text"
-          dangerouslySetInnerHTML={{ __html: props.button }}
+          dangerouslySetInnerHTML={{ __html: props.detail }}
         />
       </div>
     </div>

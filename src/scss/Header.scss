@@ -28,19 +28,5 @@ $button: #289ddf;
 }
 .navbar{
     display:flex;
-  
-    a:target, a:focus {
-        display:flex;
-        background-color: red;
-        padding: 0.35em 0.4em; 
-        padding-right: 0.4em;
-        list-style: none;
-        border-radius: 0.3em;
-        margin-left: 0.5em;
-        text-decoration: none;  
-    }
-      .active:target, .active:focus{
-        background-color: red;   
-    }
   }
   
