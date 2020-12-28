@@ -1,11 +1,14 @@
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../scss/Card.scss'
+import '../scss/Home.scss'
 import React, {useState} from "react";
 import Card from "../components/Accordion.jsx";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import DATA from '../MOCK_DATA.json';
-import '../scss/Card.scss'
-import '../scss/Home.scss'
+import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+
 
 
 
@@ -15,7 +18,7 @@ import '../scss/Home.scss'
 export default function Home() {
   const [searchTerm, setSearchTerm]= useState("");
   const [page, setPage] =useState(6)
-  const [show,setShow] =useState(false)
+
 
   const data=    DATA.filter((data)=>{
       if (searchTerm ===""){
@@ -43,14 +46,19 @@ const displayMore =()=>{
             <div>
                 <h1>Rodent World</h1>
                 <h2>All you need to know about rodents.</h2>
-                <input
-                    type="text"
-                    placeholder="Search for your favourite animal!"
-                    value={searchTerm}
-                    onChange={(e)=>{
-                        setSearchTerm(e.target.value);
-                    }}
-                />
+                <InputGroup>
+                    <InputGroupAddon addonType="prepend">
+                    <InputGroupText>@</InputGroupText>
+                    </InputGroupAddon>
+                    <Input                     
+                        type="text"
+                        placeholder="Search for your favourite animal!"
+                        value={searchTerm}
+                        onChange={(e)=>{
+                            setSearchTerm(e.target.value);
+                        }}
+                     />
+                </InputGroup>
             </div>
         </div>
 
