@@ -23,9 +23,9 @@ function Card(props) {
             <img src ={props.image}/>
             <div className="card-content">
                 <h2>{props.name}</h2>
-                <p>Suborder: {props.suborder}</p>
-                <p>Family: {props.family}</p>
-                <p>Genus: {props.genus}</p>
+                <p><span>Suborder:</span> {props.suborder}</p>
+                <p><span>Family: </span>{props.family}</p>
+                <p><span>Genus:</span> {props.genus}</p>
                 <button className={`accordion ${setActive}`} onClick={toggleAccordion}>Rodent details</button>                
                 <br/>
                 <i>Source: <a href={props.source}  target="_blank">{props.source}</a></i>

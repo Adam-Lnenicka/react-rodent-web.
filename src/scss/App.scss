@@ -1,15 +1,12 @@
 *{
-  font-family: 'Gotham';
+  font-family: 'Nunito', sans-serif;
 }
 $extra-light:  #fafafa;
 $light:  #d0d0d0;
 $medium-light:  #b2b2b2;
 $medium-dark:  	#949494;
 $dark:  #484647;
-$button: #289ddf;
-$theme-green: 	#33ac5d;
-$dark-green: 	#00310e;
-$span: green;
+
 
 h1{
   font-size: 4.5rem;
@@ -45,7 +42,6 @@ h4{
 
 p{
   margin: 0.4em 0;
-  font-family: 'GothamBook';
   color:$dark;
 
 }

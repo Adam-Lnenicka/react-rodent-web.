@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../scss/Card.scss'
 import '../scss/Home.scss'
 import React, {useState} from "react";
-import Card from "../components/Accordion.jsx";
+import Card from "../components/Card.jsx";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import DATA from '../MOCK_DATA.json';
@@ -45,8 +45,8 @@ const displayMore =()=>{
 
         <div className="banner">
             <div>
-                <h1>Rodent World</h1>
-                <h2>All you need to know about rodents.</h2>
+                <h1>All you need to know about rodents.</h1>
+
                 <InputGroup>
                     <InputGroupAddon addonType="prepend">
                     <InputGroupText  style={{backgroundColor: "#cc7351", color: "white", border:"none"}}><i class="fas fa-search"></i></InputGroupText>
@@ -66,7 +66,9 @@ const displayMore =()=>{
         <div className="card-section">
             {data}
         </div>
-        <button onClick ={displayMore}>Show more</button>
+        <div  className="btn">
+        <button className="show-more-btn" onClick ={displayMore}>Show more</button>
+        </div>
 
         <Footer/>
 
