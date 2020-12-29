@@ -8,7 +8,7 @@ export default function Header (){
         <div>
      
          <div className="header"> 
-          <img src={Logo}/>
+          <img src={Logo} alt="the happy squirrel logo"/>
           <ul className="navbar">
             <li>
               <Link to="/" style={{textDecoration: "none", color: "black"}}><span style={{textDecoration: "none"}}>Home</span></Link>
