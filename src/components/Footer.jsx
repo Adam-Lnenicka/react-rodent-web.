@@ -9,15 +9,15 @@ export default function Footer (){
                 <div className="footer-contacts">
                     <h3>Any questions? Get in touch!</h3>
                     
-                    <p><i class="fa fa-phone fa-flip-horizontal" aria-hidden="true" ></i>   0345 222 2525</p>
-                    <p><i class="far fa-envelope"></i>happy-rodent@gmail.com</p>
+                    <p><i className="fa fa-phone fa-flip-horizontal" aria-hidden="true" ></i> 0377 267 2634</p>
+                    <p><i className="far fa-envelope"></i>happy-squirrel@gmail.com</p>
                     <p>Please call Monday to Friday between 9.00am and 5.00pm.</p>
  
                 </div>
             </div>
 
             <div className="bottomFooter">
-                <p>2020 Rodent Page</p>
+                <p>2020 Happy Squirrel</p>
             </div>
         </div>
 

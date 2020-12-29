@@ -49,11 +49,11 @@ const displayMore =()=>{
 
                 <InputGroup>
                     <InputGroupAddon addonType="prepend">
-                    <InputGroupText  style={{backgroundColor: "#cc7351", color: "white", border:"none"}}><i class="fas fa-search"></i></InputGroupText>
+                    <InputGroupText  style={{backgroundColor: "#cc7351", color: "white", border:"none"}}><i className="fas fa-search"></i></InputGroupText>
                     </InputGroupAddon>
                     <Input                     
                         type="text"
-                        placeholder="Search for your favourite animal!"
+                        placeholder="Search for your favourite rodent!"
                         value={searchTerm}
                         onChange={(e)=>{
                             setSearchTerm(e.target.value);

@@ -20,7 +20,7 @@ $button: #289ddf;
         border-radius: 0.2em;
         color:white;
         font-weight:500;
-        font-size:1rem;
+        font-size:0.8rem;
         letter-spacing:1px; 
         display: inline-block;
         margin: 0 0.5em;
@@ -33,12 +33,14 @@ $button: #289ddf;
     
   }
 
-  @media(min-width: 800px){
-    .header{
-        flex-direction: row;
-        max-width: 85%;
-      }
-      li, button{
-        padding: 0.6em 1.2em;}
-  }
+@media(min-width: 800px){
+.header{
+    flex-direction: row;
+    max-width: 85%;
+    }
+    li, button{
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    }
+}
   
