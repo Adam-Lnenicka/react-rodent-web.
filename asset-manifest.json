@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-rodent-web./static/css/main.95fbf083.chunk.css",
+    "main.js": "/react-rodent-web./static/js/main.01b512e2.chunk.js",
+    "main.js.map": "/react-rodent-web./static/js/main.01b512e2.chunk.js.map",
+    "runtime-main.js": "/react-rodent-web./static/js/runtime-main.75824bfe.js",
+    "runtime-main.js.map": "/react-rodent-web./static/js/runtime-main.75824bfe.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/react-rodent-web./static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.141fd1ea.chunk.js": "/react-rodent-web./static/js/2.141fd1ea.chunk.js",
+    "static/js/2.141fd1ea.chunk.js.map": "/react-rodent-web./static/js/2.141fd1ea.chunk.js.map",
+    "static/js/3.97a9e423.chunk.js": "/react-rodent-web./static/js/3.97a9e423.chunk.js",
+    "static/js/3.97a9e423.chunk.js.map": "/react-rodent-web./static/js/3.97a9e423.chunk.js.map",
+    "index.html": "/react-rodent-web./index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/react-rodent-web./static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.95fbf083.chunk.css.map": "/react-rodent-web./static/css/main.95fbf083.chunk.css.map",
+    "static/js/2.141fd1ea.chunk.js.LICENSE.txt": "/react-rodent-web./static/js/2.141fd1ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75824bfe.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.141fd1ea.chunk.js",
+    "static/css/main.95fbf083.chunk.css",
+    "static/js/main.01b512e2.chunk.js"
+  ]
+}
